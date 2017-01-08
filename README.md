@@ -2,6 +2,8 @@
 
 Made with my mentor at [Bloc](http://bloc.io).
 
+https://bloccit-v2.herokuapp.com/ | https://git.heroku.com/bloccit-v2.git
+
 == README
 
 This README would normally document whatever steps are necessary to get the
