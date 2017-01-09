@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+resources :posts
 
-  get 'welcome/about'
+get 'about' => 'welcome#about'
 
   root to: 'welcome#index' #lp: default page when opening localhost 3000
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
