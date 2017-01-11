@@ -7,9 +7,9 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up)
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
   end
 end
 
-#permit used t be for, it changed for rails 4.2.x
-#remove :name after (:sign_up)
+#permit used to be for, it changed for rails 4.2.x
+#removed :name after (:sign_up)
