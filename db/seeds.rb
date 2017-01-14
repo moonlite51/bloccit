@@ -10,7 +10,6 @@ require 'faker'
 user.skip_confirmation!
 user.save!
 end
-
 users = User.all
 
 #Create Posts
@@ -40,5 +39,6 @@ user.update_attributes!(
   )
 
 puts "Seed finished"
+puts "#{User.count} users created"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
