@@ -45,4 +45,8 @@ Rails.application.configure do
 
   # Override Action Mailer's 'silent errors' in development
   config.action_mailer.raise_delivery_errors = true
+
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
+  #resolving config errors in localhost
+
 end
