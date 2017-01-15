@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users
-resources :posts
 
-get 'about' => 'welcome#about'
+  devise_for :users
+  resources :topics do
+    resources :posts, except: [:index]
+  end
+
+  get 'about' => 'welcome#about'
 
   root to: 'welcome#index' #lp: default page when opening localhost 3000
-
-
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -61,4 +63,3 @@ get 'about' => 'welcome#about'
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
