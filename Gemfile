@@ -66,10 +66,13 @@ group :development do
 
   gem 'redcarpet' #from chapter 43
 
-  gem 'carrierwave' #from chapter 44
+  gem 'carrierwave', github: 'carrierwaveuploader/carrierwave' #from chapter 44
 
   gem 'mini_magick' #From chapter 44
 
-  gem 'fog' #from chapter 44
+  gem 'fog-aws' #from chapter 44
+  #the fog-aws is from StackOverflow to resolve issue with CarrierWave when starting rails server
 
+  gem 'net-ssh'
+  #again based on StackOverflow suggestion
 end
