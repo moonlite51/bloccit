@@ -44,6 +44,7 @@
             <p>Current avatar</p>
             <%= image_tag( current_user.avatar.profile.url ) %>
           </div>
+        <% end %>
           <div class="form-group">
             <%= f.label :avatar %>
             <%= f.file_field :avatar %>
@@ -60,4 +61,4 @@
       </div>
     </div>
   </div>
-  <% end %>
+  
