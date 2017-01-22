@@ -75,4 +75,6 @@ group :development do
 
   gem 'net-ssh'
   #again based on StackOverflow suggestion
+
+  gem 'will_paginate', '~> 3.0.5'
 end
