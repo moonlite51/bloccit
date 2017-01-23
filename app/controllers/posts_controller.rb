@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-  #def index -- chapter 40 removal
-  #  @posts = Post.all
-  #  authorize @posts
+  #def index #chapter 40 removal
+  #@posts = Post.all
+  #authorize @posts
   #end
 
   def show
